@@ -1,15 +1,35 @@
 
 
-
 export const App=()=> {
   
-//voy probando en mi rama
-//segundo cambio
+//aca escribimos la logica de codigo
+
+
+const saludo="hola estamso aca en React";
+
+const MostrarEventoImagen=()=>{
+  console.log("diste click en la imagen");
+ }
+
+
+
+
   return (
     <>
-     aca estamos en el primer componente
+
+
+  
+
+     <img className="imagenAvatar" src="./src/assets/img.jpg" alt="imagen de puerto anime"  onClick={MostrarEventoImagen} />
+     
+ 
+
     </>
   )
 }
+
+
+
+
 
 

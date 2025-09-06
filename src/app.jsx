@@ -4,10 +4,19 @@
 export const App=()=> {
   //comentario
  //segundo comentario
- a=0
+ const saludo="Hola";
+
+
+ const mostarEventoimagen=()=>{
+  console.log("diste click en la imagen");
+ }
   return (
     <>
-     aca estamos en el primer componente
+    
+     <h1>ESTO ES UNA ETIQUETA H1</h1>
+     <img className="imagenGato" src="src\assets\gat.png" alt="imagen gato" onClick={mostarEventoimagen} />
+     <input type="text" />
+     <button>SOY BOTON</button>
     </>
   )
 }

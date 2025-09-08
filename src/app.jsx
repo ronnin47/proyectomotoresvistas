@@ -1,29 +1,54 @@
 
 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Nave } from './nav';
+import { Footer } from './foot';
+import { Intro } from './intro';
+import { Motores } from './motores'; 
+import { Crono } from "./crono"; 
+import { Aplicaciones } from "./aplicaciones";
+import { Conclusiones } from "./conclusiones";
+
+
+
+
+
+
 export const App=()=> {
   
-//aca escribimos la logica de codigo
-
-
-const saludo="hola estamso aca en React";
-
-const MostrarEventoImagen=()=>{
-  console.log("diste click en la imagen");
- }
-
-
+  //Props
+  const nombrePagina="ISFT-Motores Vistas";
 
 
   return (
     <>
+    <Router>
+        <div className='layout'>
+
+          <Nave nombrePagina={nombrePagina}/>
+
+          <div className='content'>
 
 
-  
+            <Routes>
+              <Route path="/" element={<Intro/>} />
+              <Route path="/home" element={<Intro/>} />
+              <Route path="/motores" element={<Motores/>} />
+              <Route path="/crono" element={<Crono/>} />
+              <Route path="/aplicaciones" element={<Aplicaciones/>} />
+              <Route path="/conclusiones" element={<Conclusiones/>} />
+            </Routes>
 
-     <img className="imagenAvatar" src="./src/assets/img.jpg" alt="imagen de puerto anime"  onClick={MostrarEventoImagen} />
-     
- 
+        
+          </div>
+          
+          <Footer/>
 
+        </div>
+      
+    </Router> 
+
+    
     </>
   )
 }

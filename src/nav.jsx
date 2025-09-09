@@ -5,6 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
 export const Nave=({nombrePagina})=> {
+  
   return (
     <Navbar expand="lg" bg="dark" data-bs-theme="dark">
       <Container>

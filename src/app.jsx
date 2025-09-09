@@ -1,22 +1,30 @@
 
+import { Intro } from "./Intro";
+import { Nave } from "./nav";
+import { Footer } from "./footer";
+import { Mapeo } from "./mapeo";
+export const App = () => {
+  
 
-
-export const App=()=> {
-  const saludo="aca andamo programando de pana";
-   const mostrareventoimagen=()=>{
-    console.log("te has unido a los tralaleros");
+  const mostrareventoimagen = () => {
+   
   };
-  return (
-    <>
-    
-    <p     className="texto" >{saludo}</p>
-    <h1>aca andamo de pana</h1>
-    <img src="public/tralalero-tralala.jpg" alt="tralalero por siempre"/>
 
-    <input type="text" />
-    <button onClick={mostrareventoimagen}>tralalero</button>
+  const nombrePagina="ISFT Motores vista";
+
+return (
+    <>
+      <div className="layout">
+        <Nave nombrePagina={nombrePagina}/>
+        <div className="content">
+          
+          
+          
+          <Intro />
+          <Mapeo />
+        </div>
+        <Footer />
+      </div>
     </>
   );
 };
-
-

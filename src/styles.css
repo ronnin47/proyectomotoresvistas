@@ -52,3 +52,15 @@ margin: 0 auto;
   object-fit: cover;
   display: block;
 }
+
+.mapeoCards{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; 
+  justify-content: center;  
+}

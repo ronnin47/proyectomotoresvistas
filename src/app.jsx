@@ -1,6 +1,8 @@
 
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+//componentes nuestros que importamos
 import { Nave } from './nav';
 import { Footer } from './foot';
 import { Intro } from './intro';
@@ -45,10 +47,7 @@ export const App=()=> {
           <Footer/>
 
         </div>
-      
     </Router> 
-
-    
     </>
   )
 }

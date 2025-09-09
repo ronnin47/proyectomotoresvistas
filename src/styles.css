@@ -1,5 +1,6 @@
 
 
+
 /*clas de css*/
 body {
   background: linear-gradient(135deg, #0d0d0d, #1a1a2e, #162447, #1f4068);
@@ -234,5 +235,27 @@ p{
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+}
+
+
+
+.cardMotor {
+  background: #222a;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #0006;
+  padding: 1.5em;
+  margin: 1em;
+  max-width: 540px;
+  color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.cardMotor:hover{ 
+  transform: scale(1.02); 
+
+  box-shadow: 0 0 10px aquamarine ;
+  transition: all 0.5s ease;
+
 }
 

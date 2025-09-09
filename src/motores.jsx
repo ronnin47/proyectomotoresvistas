@@ -1,3 +1,9 @@
+import { Typewriter } from 'react-simple-typewriter';
+import { Cuadro } from './cuadro';
+
+
+
+
 const CardMotor = ({
   nombre,
   descripcion,
@@ -12,18 +18,7 @@ const CardMotor = ({
 }) => {
   
   return (
-    <div className="cardMotor" style={{
-      background: "#222a",
-      borderRadius: "12px",
-      boxShadow: "0 2px 12px #0006",
-      padding: "1.5em",
-      margin: "1em",
-      maxWidth: "540px",
-      color: "aliceblue",
-      display: "flex",
-      flexDirection: "row", // imagen a la izquierda, contenido a la derecha
-      alignItems: "flex-start"
-    }}>
+    <div className="cardMotor" >
       <img
         src={imagenUrl}
         alt={nombre}
@@ -32,6 +27,7 @@ const CardMotor = ({
           height: "200px",
           objectFit: "contain",
           marginRight: "1.5em",
+          border: "4px solid green",
           borderRadius: "8px",
           background: "#fff",
           flexShrink: 0
@@ -72,6 +68,11 @@ const CardMotor = ({
     </div>
   );
 }
+
+
+
+
+
 
 
 export const Motores = () => {
@@ -157,7 +158,7 @@ export const Motores = () => {
   {
     nombre: "Backbone.js",
     descripcion: "Framework ligero de JavaScript para construir aplicaciones web estructuradas.",
-    imagenUrl: "https://upload.wikimedia.org/wikipedia/en/9/9d/Backbone.js_logo.svg",
+    imagenUrl: "https://vabadus.es/images/cache/imagen_nodo/images/articulos/5c9df03f9d512676337947.jpg",
     origen: "Jeremy Ashkenas",
     paginaOficial: "https://backbonejs.org/",
     paradigma: "MVC (Model-View-Controller)",
@@ -169,7 +170,7 @@ export const Motores = () => {
   {
     nombre: "Ember.js",
     descripcion: "Framework de JavaScript para construir aplicaciones web ambiciosas y escalables.",
-    imagenUrl: "https://upload.wikimedia.org/wikipedia/commons/6/6a/Ember.js_Logo_and_Mascot.png",
+    imagenUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuwlpysC69HjkotXNOCwgwWCMjjCgRfr6uow&s",
     origen: "Yehuda Katz",
     paginaOficial: "https://emberjs.com/",
     paradigma: "Declarativo, basado en componentes",
@@ -229,7 +230,7 @@ export const Motores = () => {
   {
     nombre: "ASP.NET",
     descripcion: "Framework de desarrollo web de código abierto para construir aplicaciones web con .NET.",
-    imagenUrl: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Microsoft_ASP.NET_Logo.png",
+    imagenUrl: "https://www.aprender21.com.ar/images/colaboradores/asp.png",
     origen: "Microsoft",
     paginaOficial: "https://dotnet.microsoft.com/apps/aspnet",
     paradigma: "MVC (Model-View-Controller), Web API",
@@ -262,7 +263,21 @@ export const Motores = () => {
     <div style={{ dislapy:"flex",flexDirection:"column",justifyContent:"center",width:"100%",alignItems:"center",marginTop:"1em"   }}>
      
 
-      <h2>Motores Modernos</h2>
+
+
+
+  <h1 style={{ fontSize: "2.5rem", fontFamily:"-moz-initial",textAlign:"center", color: "aliceblue",textShadow: "0 0 10px aquamarine" }}>
+      <Typewriter
+        words={['Motores de Vistas Modernos', 'React', 'Angular', 'Vue', 'Svelte']}
+        loop={true}
+        cursor
+        cursorStyle=' | '
+        typeSpeed={170}
+        deleteSpeed={100}
+        delaySpeed={1000}
+      />
+    </h1>
+ 
     
       <div className="contenedorCards" style={{ marginTop: "1em" }}>  
       
@@ -285,7 +300,17 @@ export const Motores = () => {
 
       </div>
 
-    <h2>Motores viejos</h2>
+ <h1 style={{ fontSize: "2.5rem", fontFamily:"-moz-initial",textAlign:"center", color: "aliceblue",textShadow: "0 0 10px aquamarine", marginTop:"2em"  }}>
+      <Typewriter
+       words={["Django", ".NET Core", "Backbone.js", "Ember.js", "Express.js", "Ruby on Rails", "Laravel", "Spring", "ASP.NET", "Flask"]}
+        loop={true}
+        cursor
+        cursorStyle=' | '
+        typeSpeed={170}
+        deleteSpeed={100}
+        delaySpeed={1000}
+      />
+    </h1>
 
      <div className="contenedorCards" style={{ marginTop: "1em" }}>  
     
@@ -308,6 +333,10 @@ export const Motores = () => {
 
     </div>
     
+
+    <div>
+    <Cuadro motores={[...motoresModernos, ...motoresViejos]} />
+   </div>
    
     </div>
 
@@ -332,6 +361,3 @@ export const Motores = () => {
 
 
 
-
-
-/* */

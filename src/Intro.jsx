@@ -26,9 +26,9 @@ Características comunes de un motor de vistas:
 return(
 <>
     <div className="introduccion">
-        <div className="imagen">
-        <img style={{width:"100%",borderRadius:"10px"}} src="react.webp" alt="" />
-        </div>
+
+        <img style={{width:"600px",borderRadius:"10px"}} src="https://coreui.io/images/blog/react-bootstrap-cover_hu_81769b384d865f9e.webp" alt="" />
+    
         <p className="intro">
         {informeMotoresVistas}
         </p>

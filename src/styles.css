@@ -1,25 +1,26 @@
 body{
-
     background-color: black;
 }
 
 .layout {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* ocupa toda la pantalla */
+  min-height: 100vh; 
 }
 
-/* Contenido en el medio */
 .content {
-  flex: 1; /* ocupa todo el espacio libre */
+  flex: 1;
   display: flex;
   flex-direction: column;
-  background-color: #121213; /* fondo claro */
+  background-color: #121213;
+  align-items: center;      /* Centra horizontalmente los hijos */
+  justify-content: flex-start; /* Opcional: alinea arriba */
+  width: 100%;
 }
 
-/* Footer siempre abajo */
+
 footer {
-  background-color: #212529; /* dark */
+  background-color: #212529; 
   color: #fff;
   padding: 20px 0;
   text-align: center;
@@ -28,20 +29,26 @@ footer {
 .intro{
 text-align: center;
 color: aquamarine;
+padding: 3em;
 margin: 0 auto;
 
 }
 
-.introduccion{
-    display:grid;
-    grid-template-columns: 50% 50%;
-    gap:20px;
-    padding: 20px;
+.introduccion {
+  display: grid;
+  grid-template-columns: 45% 45%; /* Imagen más ancha */
+
+  justify-content: center;
+  
+  margin: 0 auto;
 }
 
-.imagen{
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.introduccion img {
+  width: 100%;
+  height: 70%;
+  margin-top: 10%;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px #0006;
+  object-fit: cover;
+  display: block;
 }

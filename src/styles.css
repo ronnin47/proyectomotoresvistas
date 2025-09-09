@@ -214,7 +214,25 @@ p{
 
 
 .dev-list {
-  white-space: nowrap;
+  white-space: normal;   /* Permite saltos de línea */
+  word-break: break-word; /* Rompe palabras largas si es necesario */
+  font-size: 1em;
+  text-align: center;    /* Centra el texto si lo deseas */
+  margin: 0;
+  padding: 0;
+}
 
+@media (max-width: 480px) {
+  .dev-list {
+    font-size: 0.9em;
+  }
+}
+
+
+.contenedorCards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 

@@ -1,11 +1,10 @@
-import React from 'react'
-import Button from 'react-bootstrap/Button';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 
 
 
 export const Logos = () => {
+
 const logos = [
     { clase: "devicon-svelte-plain colored motorLogo", nombre: "Svelte" },
     { clase: "devicon-backbonejs-plain colored motorLogo", nombre: "Backbone.js" },
@@ -19,6 +18,7 @@ const logos = [
   return (
     <>
        <div className="contenedorLogos" style={{ marginTop: "1em" }}>
+      
       {logos.map((logo, index) => (
         <OverlayTrigger
           key={index}
@@ -28,6 +28,7 @@ const logos = [
           <i className={logo.clase}></i>
         </OverlayTrigger>
       ))}
+
     </div>
     </>
   )

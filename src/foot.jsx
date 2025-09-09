@@ -12,13 +12,13 @@ export const Footer = () => {
             <p>© {new Date().getFullYear()} Todos los derechos reservados.</p>
           </Col>
 
-          <Col md={4}>
+          <Col md={4} className="mb-3">
             <h5>Desarrolladores</h5>
-            <p className="dev-list">Brian Gonzalez | Sebastian Palavecino | Jorge Tournier</p>
+            <p className="dev-list">B. Gonzalez | S. Palavecino | J. Tournier</p>
             
           </Col>
-
-          <Col md={4}>
+ 
+          <Col md={4} className="mb-3">
 
             <h5>Redes Sociales</h5>
             

@@ -25,7 +25,7 @@ const motores = [
     apps: [
       { nombre: "Google Cloud Console", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX7zFdXsKDv1EVHLvyOEt7RrPQ7kxYXCI7kg&s" },
       { nombre: "Microsoft Office Online", logo: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" },
-      { nombre: "Deutsche Bank", logo: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Deutsche_Bank_logo_without_wordmark.svg" },
+      { nombre: "Deutsche Bank", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Deutsche_Bank_logo_without_wordmark.svg/1024px-Deutsche_Bank_logo_without_wordmark.svg.png" },
       { nombre: "Forbes", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Forbes_logo.svg/2560px-Forbes_logo.svg.png" },
       { nombre: "Gmail", logo: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" },
     ],

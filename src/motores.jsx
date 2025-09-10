@@ -1,5 +1,6 @@
 import { Typewriter } from 'react-simple-typewriter';
 import { Cuadro } from './cuadro';
+import { useEffect, useState } from 'react';
 
 
 
@@ -129,7 +130,6 @@ export const Motores = () => {
   }
 ];
 
-
  const motoresViejos = [
   {
     nombre: "Django",
@@ -254,29 +254,60 @@ export const Motores = () => {
 ];
 
 
+const [palabraBuscada,setPalabraBuscada]=useState("");
+
+const HandleChange=(e)=>{
+  console.log("",e.target.value)
+  setPalabraBuscada(e.target.value)
+}
+  
+const motoresFiltrados = [...motoresModernos,...motoresViejos].filter((motor) =>
+  motor.nombre.toLowerCase().includes(palabraBuscada.toLowerCase())
+);
+
+
   return (
     <>
-    {/*<p>ACA ESTARIA LA PAGINA CON LOS MOTORES ACTUALES</p>*/}  
+     
     
-
-
+   
     <div style={{ dislapy:"flex",flexDirection:"column",justifyContent:"center",width:"100%",alignItems:"center"   }}>
      
+      <div className="inputBuscar">
+        <input type="text" placeholder="Ingrese nombre de algún motor" value={palabraBuscada} onChange={HandleChange} />
+        <span className="icono">🔍</span>
+      </div>
 
+      { motoresFiltrados.length>0 && palabraBuscada!="" ? ( <div className="contenedorCards" style={{ marginTop: "1em" }}>  
+      
+      {motoresFiltrados.map((motor, index)=>(
+        <CardMotor
+        key={index}
+        nombre={motor.nombre}
+        descripcion={motor.descripcion}
+        imagenUrl={motor.imagenUrl}
+        origen={motor.origen}
+        paginaOficial={motor.paginaOficial}
+        paradigma={motor.paradigma}
+        tipo={motor.tipo}
+        lenguaje={motor.lenguaje}
+        licencia={motor.licencia}
+        caracteristicas={motor.caracteristicas}
+        ></CardMotor>
+      )) }  
+      
 
-
-
-  <h1 style={{ fontSize: "2.5rem", fontFamily:"-moz-initial",textAlign:"center",marginBottom:"1em" ,color: "aliceblue",textShadow: "0 0 10px aquamarine" }}>
-      <Typewriter
-        words={['Motores de Vistas Modernos', 'React', 'Angular', 'Vue', 'Svelte']}
-        loop={true}
-        cursor
-        cursorStyle=' | '
-        typeSpeed={170}
-        deleteSpeed={100}
-        delaySpeed={1000}
-      />
-    </h1>
+      </div>) : (<div>  <h1 style={{ fontSize: "2.5rem", fontFamily:"-moz-initial",textAlign:"center",marginBottom:"1em" , marginTop:"1em",color: "aliceblue",textShadow: "0 0 10px aquamarine" }}>
+          <Typewriter
+            words={['Motores de Vistas Modernos', 'React', 'Angular', 'Vue', 'Svelte']}
+            loop={true}
+            cursor
+            cursorStyle=' | '
+            typeSpeed={170}
+            deleteSpeed={100}
+            delaySpeed={1000}
+          />
+        </h1>
  
     
       <div className="contenedorCards" style={{ marginTop: "1em" }}>  
@@ -331,7 +362,11 @@ export const Motores = () => {
     )) }  
     
 
-    </div>
+    </div></div>) }
+
+
+
+     
     
 
     <div>
@@ -340,10 +375,6 @@ export const Motores = () => {
    
     </div>
 
-    
-   
-    
-    
     </>
   )
 }

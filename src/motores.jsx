@@ -260,13 +260,13 @@ export const Motores = () => {
     
 
 
-    <div style={{ dislapy:"flex",flexDirection:"column",justifyContent:"center",width:"100%",alignItems:"center",marginTop:"1em"   }}>
+    <div style={{ dislapy:"flex",flexDirection:"column",justifyContent:"center",width:"100%",alignItems:"center"   }}>
      
 
 
 
 
-  <h1 style={{ fontSize: "2.5rem", fontFamily:"-moz-initial",textAlign:"center", color: "aliceblue",textShadow: "0 0 10px aquamarine" }}>
+  <h1 style={{ fontSize: "2.5rem", fontFamily:"-moz-initial",textAlign:"center",marginBottom:"1em" ,color: "aliceblue",textShadow: "0 0 10px aquamarine" }}>
       <Typewriter
         words={['Motores de Vistas Modernos', 'React', 'Angular', 'Vue', 'Svelte']}
         loop={true}
@@ -300,9 +300,9 @@ export const Motores = () => {
 
       </div>
 
- <h1 style={{ fontSize: "2.5rem", fontFamily:"-moz-initial",textAlign:"center", color: "aliceblue",textShadow: "0 0 10px aquamarine", marginTop:"2em"  }}>
+ <h1 style={{ fontSize: "2.5rem", fontFamily:"-moz-initial",textAlign:"center", color: "aliceblue",textShadow: "0 0 10px aquamarine", marginTop:"1em"  }}>
       <Typewriter
-       words={["Django", ".NET Core", "Backbone.js", "Ember.js", "Express.js", "Ruby on Rails", "Laravel", "Spring", "ASP.NET", "Flask"]}
+       words={["Motores Clasicos","Django", ".NET Core", "Backbone.js", "Ember.js", "Express.js", "Ruby on Rails", "Laravel", "Spring", "ASP.NET", "Flask"]}
         loop={true}
         cursor
         cursorStyle=' | '

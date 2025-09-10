@@ -1,4 +1,6 @@
 import React from 'react'
+import { Info } from './descargarInforme'
+
 
 export const Conclusiones = () => {
   return (
@@ -64,46 +66,32 @@ Los motores de vistas han revolucionado la manera de construir aplicaciones, per
      </div>
       
 
-      <div style={{marginTop:"2em", backgroundColor:"hsla(210, 64%, 48%, 0.50)", padding:"1em", borderRadius:"10px" }}>
+      <div
+          style={{
+            marginTop: "2em",
+            backgroundColor: "hsla(210, 64%, 48%, 0.50)",
+            padding: "1em",
+            borderRadius: "10px",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center" // 👈 esto centra horizontalmente
+          }}
+        >
           <h3 className="text-lg font-semibold mb-2">Reflexión final</h3>
-      <p>
-        La selección de un motor de vistas no solo depende de la tecnología en sí, sino del contexto del proyecto, los recursos del equipo y los objetivos a largo plazo. Con la elección adecuada, los motores de vistas permiten crear aplicaciones más eficientes, mantenibles y escalables, adaptándose a las necesidades del desarrollo moderno.
-      </p>
+          <p style={{ textAlign: "center" }}>
+            La selección de un motor de vistas no solo depende de la tecnología en sí,
+            sino del contexto del proyecto, los recursos del equipo y los objetivos a
+            largo plazo. Con la elección adecuada, los motores de vistas permiten crear
+            aplicaciones más eficientes, mantenibles y escalables, adaptándose a las
+            necesidades del desarrollo moderno.
+          </p>
+
+          <Info />
       </div>
-    
+
+     
     </div>
   )
 }
-
-
-/*
-Conclusiones
-
-Impacto en el desarrollo de software:
-Los motores de vistas han revolucionado la forma de construir aplicaciones, permitiendo interfaces más dinámicas, interactivas y fáciles de mantener. Facilitan la separación entre lógica de negocio y presentación, promoviendo buenas prácticas en el desarrollo.
-
-Características de los principales motores de vistas:
-
-React: Destaca por su flexibilidad, rendimiento y un ecosistema amplio respaldado por una comunidad activa. Ideal para aplicaciones con requerimientos cambiantes y crecimiento progresivo.
-
-Angular: Ofrece robustez y una estructura completa, adecuada para proyectos grandes y entornos corporativos que requieren escalabilidad y mantenimiento a largo plazo.
-
-Vue: Su simplicidad y curva de aprendizaje baja lo hacen accesible, permitiendo integraciones rápidas y desarrollo progresivo sin sacrificar funcionalidad.
-
-Razor / Python (Django/Jinja2): Se integran de manera eficiente en entornos donde C# o Python dominan el backend, facilitando la coherencia entre frontend y backend en aplicaciones empresariales.
-
-Elección según contexto y necesidades:
-
-Escalabilidad y robustez → Angular: recomendado para proyectos complejos y equipos grandes.
-
-Flexibilidad y ecosistema → React: ideal para aplicaciones dinámicas y en constante evolución.
-
-Simplicidad y progresividad → Vue: perfecto para proyectos medianos o donde se requiere implementación rápida.
-
-Integración con entornos empresariales → Razor o Django/Jinja2: cuando se busca cohesión con el backend y facilidad de mantenimiento.
-
-Reflexión final:
-La selección de un motor de vistas no solo depende de la tecnología en sí, sino del contexto del proyecto, los recursos del equipo y los objetivos a largo plazo. Con la elección adecuada, los motores de vistas permiten crear aplicaciones más eficientes, mantenibles y escalables, adaptándose a las necesidades del desarrollo moderno.
-*/
-
 

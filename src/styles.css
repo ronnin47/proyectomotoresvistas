@@ -15,9 +15,6 @@ html{
    font-size: 14px;
 }
 
-
-
-
 /* Contenedor general */
 .layout {
   display: flex;
@@ -26,7 +23,6 @@ html{
 }
 
 /* Contenido en el medio */
-
 .content {
   flex: 1; /* ocupa todo el espacio libre */
   display: flex;

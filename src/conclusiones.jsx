@@ -4,7 +4,7 @@ import { Info } from './descargarInforme'
 
 export const Conclusiones = () => {
   return (
-    <div className="max-w-3xl mx-auto p-6 bg-[#222a] rounded-xl shadow-lg text-white">
+    <div className="container">
       
       
       

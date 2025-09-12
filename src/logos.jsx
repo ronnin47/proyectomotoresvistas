@@ -26,7 +26,7 @@ const logos = [
          
           overlay={<Tooltip id={`tooltip-${index}`}>{logo.nombre}</Tooltip>}
         >
-          <i className={logo.clase}></i>
+          <i className={logo.clase} style={{fontSize:"0.8em"}}></i>
         </OverlayTrigger>
       ))}
 

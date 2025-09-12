@@ -18,8 +18,6 @@ export const Conclusiones = () => {
       <div>
            <h3 className="text-lg font-semibold mb-2">Impacto en el desarrollo de software</h3>
       <p className="mb-4">
- Impacto en el desarrollo de software
-
 Los motores de vistas han revolucionado la manera de construir aplicaciones, permitiendo interfaces más dinámicas, interactivas y fáciles de mantener. Gracias a ellos, es posible separar claramente la lógica de negocio de la presentación, lo que facilita la modularidad, la reutilización de componentes y la colaboración entre equipos. Esto no solo mejora la eficiencia en el desarrollo y mantenimiento, sino que también contribuye a crear aplicaciones más robustas, escalables y centradas en la experiencia del usuario, capaces de adaptarse a cambios y crecer con las necesidades del proyecto.
       </p>
       </div>

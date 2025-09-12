@@ -39,7 +39,7 @@ const motores = [
       { nombre: "Xiaomi", logo: "https://upload.wikimedia.org/wikipedia/commons/2/29/Xiaomi_logo.svg" },
       { nombre: "Nintendo", logo: "https://upload.wikimedia.org/wikipedia/commons/0/0d/Nintendo.svg" },
       { nombre: "GitLab", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR13L-lOWEDftXumYLiHGASvLqCJ6xr78_c-A&s" },
-      { nombre: "Behance (Adobe)", logo: "https://play-lh.googleusercontent.com/uirJ2KGaxDReRBeYMp9rj7AL42qsD2A8_synL6iL0wIcYlOfT1pEyiv9MSjEV8-HZFo" },
+      { nombre: "Behance (Adobe)", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAnclPLEQ9CShH1U1Qz6d-7Av0MJPfm3Eyzw&s" },
     ],
     resumen: "Vue.js es popular en startups y productos de iteración rápida."
   },

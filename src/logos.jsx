@@ -23,6 +23,7 @@ const logos = [
         <OverlayTrigger
           key={index}
           placement="top"
+         
           overlay={<Tooltip id={`tooltip-${index}`}>{logo.nombre}</Tooltip>}
         >
           <i className={logo.clase}></i>

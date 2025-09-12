@@ -1,5 +1,5 @@
 
-
+@import "tailwindcss";
 
 /*clas de css*/
 body {
@@ -9,9 +9,16 @@ body {
   margin: 0;
   font-family: sans-serif;
   font-size: 14px;
-  zoom: 0.87; /* 90% */
+  
+  
+ /*zoom: 0.87;*/  
 }
 
+
+
+html {
+  font-size: 14px; /* reduce todo el sitio */
+}
 /* Contenedor general */
 .layout {
   display: flex;
@@ -402,4 +409,12 @@ p{
   transform: translateY(-50%);
   color: aquamarine;
   pointer-events: none;     /* evita que bloquee el click dentro del input */
+}
+
+.motorLogo {
+  display: inline-block; /* hace que el tooltip calcule bien */
+  position: relative;    /* asegura referencia */
+  font-size: 3rem;       /* tamaño de los íconos */
+  margin: 0.5rem;        /* separación entre logos */
+  cursor: pointer;
 }

@@ -26,29 +26,40 @@ Los motores de vistas han revolucionado la manera de construir aplicaciones, per
       
       
      
-    <div style={{backgroundColor:"#333a", padding:"1em", borderRadius:"10px" }} >
-       <h3 className="text-lg font-semibold mb-2">Características de los principales motores de vistas</h3>
-      <ul className="list-disc pl-6 mb-4">
-        <li className="flex items-center mb-2">
-          <i className="devicon-react-original colored" style={{fontSize: "2rem", marginRight: "0.5em"}}></i>
-          <strong>React:</strong> Flexibilidad, rendimiento y un ecosistema amplio respaldado por una comunidad activa. Ideal para aplicaciones con requerimientos cambiantes y crecimiento progresivo.
-        </li>
-        <li className="flex items-center mb-2">
-          <i className="devicon-angularjs-plain colored" style={{fontSize: "2rem", marginRight: "0.5em"}}></i>
-          <strong>Angular:</strong> Robustez y estructura completa, adecuada para proyectos grandes y entornos corporativos que requieren escalabilidad y mantenimiento a largo plazo.
-        </li>
-        <li className="flex items-center mb-2">
-          <i className="devicon-vuejs-plain colored" style={{fontSize: "2rem", marginRight: "0.5em"}}></i>
-          <strong>Vue:</strong> Simplicidad y curva de aprendizaje baja, permite integraciones rápidas y desarrollo progresivo sin sacrificar funcionalidad.
-        </li>
-        <li className="flex items-center mb-2">
-          <i className="devicon-dotnetcore-plain colored" style={{fontSize: "2rem", marginRight: "0.5em"}}></i>
-          <i className="devicon-django-plain colored" style={{fontSize: "2rem", marginRight: "0.5em"}}></i>
-          <strong>Razor / Python (Django/Jinja2):</strong> Integración eficiente en entornos donde C# o Python dominan el backend, facilitando la coherencia entre frontend y backend en aplicaciones empresariales.
-        </li>
-      </ul>
-
-    </div>
+  <div className="bg-gray-800/80 p-6 rounded-xl shadow-lg">
+  <h3 className="text-xl font-bold mb-4 text-aquamarine">
+    Características de los principales motores de vistas
+  </h3>
+  <ul className="space-y-4">
+    <li className="flex items-start gap-3">
+      <i className="devicon-react-original colored text-3xl mt-1"></i>
+      <p>
+        <strong>React:</strong> Flexibilidad, rendimiento y un ecosistema amplio respaldado por una comunidad activa. Ideal para aplicaciones con requerimientos cambiantes y crecimiento progresivo.
+      </p>
+    </li>
+    <li className="flex items-start gap-3">
+      <i className="devicon-angularjs-plain colored text-3xl mt-1"></i>
+      <p>
+        <strong>Angular:</strong> Robustez y estructura completa, adecuada para proyectos grandes y entornos corporativos que requieren escalabilidad y mantenimiento a largo plazo.
+      </p>
+    </li>
+    <li className="flex items-start gap-3">
+      <i className="devicon-vuejs-plain colored text-3xl mt-1"></i>
+      <p>
+        <strong>Vue:</strong> Simplicidad y curva de aprendizaje baja, permite integraciones rápidas y desarrollo progresivo sin sacrificar funcionalidad.
+      </p>
+    </li>
+    <li className="flex items-start gap-3">
+      <div className="flex gap-2 mt-1">
+        <i className="devicon-dotnetcore-plain colored text-3xl"></i>
+        <i className="devicon-django-plain colored text-3xl"></i>
+      </div>
+      <p>
+        <strong>Razor / Python (Django/Jinja2):</strong> Integración eficiente en entornos donde C# o Python dominan el backend, facilitando la coherencia entre frontend y backend en aplicaciones empresariales.
+      </p>
+    </li>
+  </ul>
+</div>
 
       
 

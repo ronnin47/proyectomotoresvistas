@@ -54,9 +54,53 @@ const parrafoIntro2=`Un motor de vistas es la tecnología que se encarga de tran
           </div>
 
 
-         <Logos/> 
+      
+
+
+
+             {/* ---------- NUEVO DIV CON VIDEO ---------- */}
+        <div
+          className="contenedorVideo"
+          style={{
+            marginTop: "5em",
+            textAlign: "center",
+          
+            padding: "2em",
+            borderRadius: "10px",
+       
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center"
+          }}
+        >
+          <p
+            className="titulo"
+            
+          >
+           La guerra de los Frameworks
+          </p>
+
+          <video
+            controls
+            width="80%"
+            style={{
+              borderRadius: "12px",
+              border: "1px solid rgba(255,255,255,0.3)",
+              boxShadow: "0 0 10px rgba(0,0,0,0.3)"
+            }}
+          >
+            <source src="/video.mp4" type="video/mp4"/>
+            Tu navegador no soporta la reproducción de video.
+          </video>
+        </div>
+        {/* ---------- FIN NUEVO DIV CON VIDEO ---------- */}
+  
+
+     <Logos/> 
 
       </div>
+
 
     
     </>

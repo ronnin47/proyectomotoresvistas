@@ -26,40 +26,40 @@ Los motores de vistas han revolucionado la manera de construir aplicaciones, per
       
       
      
-  <div className="bg-gray-800/80 p-6 rounded-xl shadow-lg">
-  <h3 className="text-xl font-bold mb-4 text-aquamarine">
-    Características de los principales motores de vistas
-  </h3>
-  <ul className="space-y-4">
-    <li className="flex items-start gap-3">
-      <i className="devicon-react-original colored text-3xl mt-1"></i>
-      <p>
-        <strong>React:</strong> Flexibilidad, rendimiento y un ecosistema amplio respaldado por una comunidad activa. Ideal para aplicaciones con requerimientos cambiantes y crecimiento progresivo.
-      </p>
-    </li>
-    <li className="flex items-start gap-3">
-      <i className="devicon-angularjs-plain colored text-3xl mt-1"></i>
-      <p>
-        <strong>Angular:</strong> Robustez y estructura completa, adecuada para proyectos grandes y entornos corporativos que requieren escalabilidad y mantenimiento a largo plazo.
-      </p>
-    </li>
-    <li className="flex items-start gap-3">
-      <i className="devicon-vuejs-plain colored text-3xl mt-1"></i>
-      <p>
-        <strong>Vue:</strong> Simplicidad y curva de aprendizaje baja, permite integraciones rápidas y desarrollo progresivo sin sacrificar funcionalidad.
-      </p>
-    </li>
-    <li className="flex items-start gap-3">
-      <div className="flex gap-2 mt-1">
-        <i className="devicon-dotnetcore-plain colored text-3xl"></i>
-        <i className="devicon-django-plain colored text-3xl"></i>
+        <div className="bg-gray-800/80 p-6 rounded-xl shadow-lg">
+        <h3 className="text-xl font-bold mb-4 text-aquamarine">
+          Características de los principales motores de vistas
+        </h3>
+        <ul className="space-y-4">
+          <li className="flex items-start gap-3">
+            <i className="devicon-react-original colored text-3xl mt-1"></i>
+            <p>
+              <strong>React:</strong> Flexibilidad, rendimiento y un ecosistema amplio respaldado por una comunidad activa. Ideal para aplicaciones con requerimientos cambiantes y crecimiento progresivo.
+            </p>
+          </li>
+          <li className="flex items-start gap-3">
+            <i className="devicon-angularjs-plain colored text-3xl mt-1"></i>
+            <p>
+              <strong>Angular:</strong> Robustez y estructura completa, adecuada para proyectos grandes y entornos corporativos que requieren escalabilidad y mantenimiento a largo plazo.
+            </p>
+          </li>
+          <li className="flex items-start gap-3">
+            <i className="devicon-vuejs-plain colored text-3xl mt-1"></i>
+            <p>
+              <strong>Vue:</strong> Simplicidad y curva de aprendizaje baja, permite integraciones rápidas y desarrollo progresivo sin sacrificar funcionalidad.
+            </p>
+          </li>
+          <li className="flex items-start gap-3">
+            <div className="flex gap-2 mt-1">
+              <i className="devicon-dotnetcore-plain colored text-3xl"></i>
+              <i className="devicon-django-plain colored text-3xl"></i>
+            </div>
+            <p>
+              <strong>Razor / Python (Django/Jinja2):</strong> Integración eficiente en entornos donde C# o Python dominan el backend, facilitando la coherencia entre frontend y backend en aplicaciones empresariales.
+            </p>
+          </li>
+        </ul>
       </div>
-      <p>
-        <strong>Razor / Python (Django/Jinja2):</strong> Integración eficiente en entornos donde C# o Python dominan el backend, facilitando la coherencia entre frontend y backend en aplicaciones empresariales.
-      </p>
-    </li>
-  </ul>
-</div>
 
       
 
@@ -75,7 +75,112 @@ Los motores de vistas han revolucionado la manera de construir aplicaciones, per
      </div>
       
 
-      <div
+    
+
+
+
+
+  {/* HUELLITAS FELICES & MOTORES VISTA */}
+<div
+  style={{
+    marginTop: "2em",
+    backgroundColor: "#2633509c",
+    padding: "2em",
+    borderRadius: "12px",
+    boxShadow: "0 0 10px rgba(0,0,0,0.15)",
+    lineHeight: "1.6",
+   
+    margin: "2em auto",
+    fontFamily: "'Poppins', sans-serif"
+  }}
+>
+  <h2
+    style={{
+      textAlign: "center",
+      color: "aliceblue",
+      marginBottom: "0.8em",
+      fontWeight: "700"
+    }}
+  >
+    🐾 Presentación: Opciones de Frameworks Frontend para el Módulo <br /> <span style={{ color: "#2563eb" }}>Servicios</span>
+  </h2>
+
+  {/* Sección 1 */}
+  <section style={{ marginBottom: "1.5em" }}>
+    <h3 style={{ color: "aliceblue", borderBottom: "2px solid #60a5fa", paddingBottom: "4px" }}>
+      1. Contexto y Requisitos del Módulo Servicios
+    </h3>
+    <p>
+      El <strong>Módulo Servicios</strong> forma parte del sistema de gestión integral de la veterinaria <strong>“Huellitas Felices”</strong>. 
+      Su propósito es la gestión digital de los distintos servicios: consultas, vacunaciones y peluquería.
+      Este módulo se desarrollará como una aplicación local (offline), por lo que el framework frontend 
+      deberá ser <strong>robusto, eficiente y reactivo</strong> en la gestión de la interfaz.
+    </p>
+
+    <ul style={{ marginLeft: "1em" }}>
+      <li>-<strong> Listado y Búsqueda Dinámica:</strong> con filtros por nombre, tipo o rango de precio.</li>
+      <li>-<strong> Formularios Complejos:</strong> para registrar Nombre, Descripción, Precio estándar y Duración estimada.</li>
+      <li>-<strong> Validaciones en Tiempo Real:</strong> evitando duplicaciones y valores inválidos.</li>
+      <li>-<strong> Usabilidad:</strong> interfaz simple, moderna y reactiva.</li>
+      <li>-<strong> Interacción:</strong> botones Nuevo, Editar, Guardar, Cancelar e indicadores de estado.</li>
+    </ul>
+  </section>
+
+  {/* Sección 2 */}
+  <section style={{ marginBottom: "1.5em" }}>
+    <h3 style={{ color: "aliceblue", borderBottom: "2px solid #60a5fa", paddingBottom: "4px" }}>
+      2. Candidatos de Frameworks/Librerías Frontend
+    </h3>
+    <p>
+      Para construir una UI moderna y reactiva se analizan tres opciones líderes: <strong>React</strong>, <strong>Angular</strong> y <strong>Vue</strong>.
+    </p>
+    <div style={{ display: "flex", flexWrap: "wrap", gap: "1em", justifyContent: "center", marginTop: "1em" }}>
+      <div style={{ backgroundColor: "#232c35e1", padding: "1em", borderRadius: "10px", width: "250px" }}>
+        <h4 >React</h4>
+        <p>Librería JavaScript enfocada en la capa de vista. Ideal para interfaces rápidas y dinámicas con componentes reutilizables.</p>
+      </div>
+
+      <div style={{ backgroundColor: "#232c35e1", padding: "1em", borderRadius: "10px", width: "250px" }}>
+        <h4 >Angular</h4>
+        <p>Framework completo con arquitectura modular. Ideal para grandes proyectos integrados con otros módulos del sistema.</p>
+      </div>
+
+      <div style={{ backgroundColor: "#232c35e1", padding: "1em", borderRadius: "10px", width: "250px" }}>
+        <h4 >Vue</h4>
+        <p>Framework progresivo, flexible y de fácil aprendizaje. Excelente para desarrollos rápidos y usabilidad fluida.</p>
+      </div>
+    </div>
+  </section>
+
+  {/* Sección 3 */}
+  <section style={{ marginBottom: "1.5em" }}>
+    <h3 style={{ color: "aliceblue", borderBottom: "2px solid #60a5fa", paddingBottom: "4px" }}>
+      3. Consideraciones Técnicas
+    </h3>
+    <p>
+      El frontend se integrará con la base de datos relacional (<strong>MySQL</strong> o <strong>SQLite</strong>) para gestionar las tablas de <em>Servicios</em>, 
+      <em>Servicios_Empleados</em> y <em>Servicios_Insumos</em>.  
+      También deberá implementar las operaciones CRUD: creación, modificación, registro e inactivación de servicios.
+    </p>
+  </section>
+
+  {/* Resumen */}
+  <section>
+    <h3 style={{ color: "aliceblue", borderBottom: "2px solid #60a5fa", paddingBottom: "4px" }}>
+      Resumen y Recomendación Conceptual
+    </h3>
+    <p>
+      React, Angular y Vue cumplen con los requerimientos técnicos y de usabilidad del módulo.  
+      La elección dependerá de la estrategia del equipo de desarrollo y del entorno de integración.  
+      Si el Módulo Servicios fuera un gran archivador digital donde se guardan las fichas de los servicios, 
+      estos frameworks serían los <strong>escritorios inteligentes</strong> que permiten a los usuarios 
+      interactuar con esos registros de forma rápida, clara y con mínimos errores.
+    </p>
+  </section>
+</div>
+
+
+  <div
           style={{
             marginTop: "2em",
             backgroundColor: "hsla(210, 64%, 48%, 0.50)",
@@ -127,7 +232,6 @@ Los motores de vistas han revolucionado la manera de construir aplicaciones, per
   GitHub
      </a>
       </div>
-
         
     </div>
   )

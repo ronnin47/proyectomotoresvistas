@@ -97,9 +97,38 @@ Los motores de vistas han revolucionado la manera de construir aplicaciones, per
           </p>
 
           <Info />
+        
+        
+        
+     <a
+        href="https://github.com/ronnin47/proyectomotoresvistas.git"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          backgroundColor: "#f5f5f5",
+          color: "black",
+          padding: "0.5em 1em",
+          borderRadius: "6px",
+          textDecoration: "none",
+          fontWeight: "bold",
+          boxShadow: "0 0 5px rgba(0,0,0,0.2)",
+          marginTop: "1em"
+
+        }}
+        className='hovercito'
+      >
+  <img
+    src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+    alt="GitHub"
+    style={{ width: "20px", height: "20px", marginRight: "8px" }}
+  />
+  GitHub
+     </a>
       </div>
 
-     
+        
     </div>
   )
 }

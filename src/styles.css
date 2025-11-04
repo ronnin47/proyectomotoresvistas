@@ -413,3 +413,7 @@ p{
   margin: 0.5rem;        /* separación entre logos */
   cursor: pointer;
 }
+
+.hovercito:hover{
+  opacity: 0.75;
+}

@@ -95,7 +95,7 @@ export const Motores = () => {
   {
     nombre: "Angular",
     descripcion: "Framework de desarrollo web de código abierto basado en TypeScript.",
-    imagenUrl: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg",
+    imagenUrl: "https://angular.io/assets/images/logos/angular/angular.svg",
     origen: "Google",
     paginaOficial: "https://angular.io/",
     paradigma: "Declarativo, basado en componentes",
